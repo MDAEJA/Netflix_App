@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Netflix App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Netflix App. This web application is designed to provide a seamless experience for browsing and watching movies. It includes features such as user authentication, movie listings, and detailed movie pages.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Sign up and log in to access personalized content.
+- **Movie Listings**: Browse through Now Playing, Popular, Top Rated, and Upcoming movies.
+- **Movie Details**: View detailed information about each movie, including trailers and background information.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Material-UI (MUI)
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Deployment**: Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## File Structure
 
-### `npm test`
+### `/src/pages`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`Login.js`**: Handles user login and sign-up functionality. Provides validation and feedback using MUI Snackbar.
+- **`Home.js`**: Main homepage displaying different movie categories. Manages user context and dynamic content display.
+- **`MainPage.js`**: Renders the main content with video title and background components.
 
-### `npm run build`
+### `/src/component`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`Header.js`**: Displays the header with navigation options.
+- **`VideoTitle.js`**: Shows the title of the currently selected video.
+- **`VideoBackGround.js`**: Displays the background video.
+- **`MoviePage.js`**: Lists movies currently playing.
+- **`PopularMovies.js`**: Lists popular movies.
+- **`TopRatedMovies.js`**: Lists top-rated movies.
+- **`UpComingMovies.js`**: Lists upcoming movies.
+- **`MoviePlay.js`**: Handles the movie playback functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js
+- MongoDB
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/netflix-app.git
+    cd netflix-app
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies for the server:
+    ```bash
+    cd server
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install dependencies for the client:
+    ```bash
+    cd ../client
+    npm install
+    ```
 
-## Learn More
+### Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Start the MongoDB server.
+2. Start the backend server:
+    ```bash
+    cd server
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Start the frontend client:
+    ```bash
+    cd ../client
+    npm start
+    ```
 
-### Code Splitting
+The application will be running on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+- Visit the homepage to navigate through various movie categories.
+- Sign up or log in to access personalized movie recommendations and playback.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment
 
-### Making a Progressive Web App
+The application is deployed on Netlify and can be accessed [here](https://dazzling-sprinkles-6a38c5.netlify.app/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Git-Repository
 
-### Advanced Configuration
+The application code  is deployed on Git-Hub and can be accessed [here](https://github.com/MDAEJA/Netflix_App.git).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
